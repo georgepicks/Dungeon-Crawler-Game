@@ -1,0 +1,39 @@
+
+        elif self.health<=0:
+            win.blit(rogue_dead[self.dead_count // 3], (self.x, self.y))
+            self.dead_count += 1
+        else:
+            win.blit(rogue_idle[self.idle_count//6], (self.x,self.y))
+            self.idle_count +=1
+
+#rogue_walk = [rogue_walk1, rogue_walk2, rogue_walk3, rogue_walk4, rogue_walk5, rogue_walk6]
+
+#rogue walking images
+#rogue_walk1 = pygame.image.load("walk1.png")
+#rogue_walk2 = pygame.image.load("walk2.png")
+#rogue_walk3 = pygame.image.load("walk3.png")
+#rogue_walk4 = pygame.image.load("walk4.png")
+#rogue_walk5 = pygame.image.load("walk5.png")
+#rogue_walk6 = pygame.image.load("walk6.png")
+#Rezising the images
+#rogue_walk1 = pygame.transform.scale(rogue_walk1, (rogue_size, rogue_size))
+#rogue_walk2 = pygame.transform.scale(rogue_walk2, (rogue_size, rogue_size))
+#rogue_walk3 = pygame.transform.scale(rogue_walk3, (rogue_size, rogue_size))
+#rogue_walk4 = pygame.transform.scale(rogue_walk4, (rogue_size, rogue_size))
+#rogue_walk5 = pygame.transform.scale(rogue_walk5, (rogue_size, rogue_size))
+#rogue_walk6 = pygame.transform.scale(rogue_walk6, (rogue_size, rogue_size))
+
+#rogue falling over images
+#rogue_fall1 = pygame.image.load("fall1.png")
+#rogue_fall2 = pygame.image.load("fall2.png")
+#rogue_fall3 = pygame.image.load("fall3.png")
+#rogue_fall4 = pygame.image.load("fall4.png")
+#rogue_fall5 = pygame.image.load("fall5.png")
+#Resizing the images
+#rogue_fall1 = pygame.transform.scale(rogue_fall1, (rogue_size, rogue_size))
+#rogue_fall2 = pygame.transform.scale(rogue_fall2, (rogue_size, rogue_size))
+#rogue_fall3 = pygame.transform.scale(rogue_fall3, (rogue_size, rogue_size))
+#rogue_fall4 = pygame.transform.scale(rogue_fall4, (rogue_size, rogue_size))
+#rogue_fall5 = pygame.transform.scale(rogue_fall5, (rogue_size, rogue_size))
+
+#rogue_dead = [rogue_fall1, rogue_fall2, rogue_fall3, rogue_fall4, rogue_fall5]

@@ -1,0 +1,33 @@
+if self.l_attack:
+            if player.x > boss_sprite.x - 40 and player.x < boss_sprite.x + 70 and player.y > boss_sprite.y - 40 and player.y < boss_sprite.y + 70:
+                win.blit(l_attack[self.attack_count//9], (self.x, self.y))
+                boss_sprite.health -= self.player_dmg
+                self.attack_count +=1
+            
+            #Rogue sprites
+            if player.x > rogue_sprite.x - 40 and player.x < rogue_sprite.x + 70 and player.y > rogue_sprite.y - 40 and player.y < rogue_sprite.y + 70:
+                win.blit(l_attack[self.attack_count//9], (self.x, self.y))
+                rogue_sprite.health -= self.player_dmg
+                self.attack_count +=1
+
+            #Ghost Sprites
+            if player.x > ghost_sprite.x - 40 and player.x < ghost_sprite.x + 70 and player.y > ghost_sprite.y - 40 and player.y < ghost_sprite.y + 70:
+                win.blit(l_attack[self.attack_count//9], (self.x, self.y))
+                ghost_sprite.health -= self.player_dmg
+                self.attack_count +=1
+
+
+
+ if self.r_attack:
+            if player.x > boss_sprite.x - 40 and player.x < boss_sprite.x + 70 and player.y > boss_sprite.y - 40 and player.y < boss_sprite.y + 70:
+                win.blit(r_attack[self.attack_count//9], (self.x, self.y))
+                boss_sprite.health -= self.player_dmg
+                self.attack_count +=1
+            if player.x > rogue_sprite.x - 40 and player.x < rogue_sprite.x + 70 and player.y > rogue_sprite.y - 40 and player.y < rogue_sprite.y + 70:
+                win.blit(r_attack[self.attack_count//9], (self.x, self.y))
+                rogue_sprite.health -= self.player_dmg
+                self.attack_count +=1
+            if player.x > ghost_sprite.x - 40 and player.x < ghost_sprite.x + 70 and player.y > ghost_sprite.y - 40 and player.y < ghost_sprite.y + 70:
+                win.blit(r_attack[self.attack_count//9], (self.x, self.y))
+                ghost_sprite.health -= self.player_dmg
+                self.attack_count +=1

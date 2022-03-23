@@ -1,0 +1,31 @@
+def draw_boss(self,win):
+        if self.idle_count +1 >=18:
+            self.idle_count = 0
+        if self.dead_count +1 >=18:
+            self.dead_count = 18
+        if self.attack_count +1 >=18:
+            self.attack_count =0
+            
+        if player.x > self.x - 40 and player.x < self.x + 70 and player.y > self.y - 40 and player.y < self.y + 70:
+            win.blit(slime_idle[self.idle_count//6], (self.x,self.y))
+            self.idle_count +=1
+        elif self.health<=0:
+            win.blit(slime_dead[self.dead_count // 6], (self.x, self.y))
+            self.dead_count += 1
+        
+        if player.r_attack == True:
+            if player.x > self.x - 40 and player.x < self.x + 70 and player.y > self.y - 40 and player.y < self.y + 70:
+                win.blit(r_attack[self.attack_count//9], (player.x, player.y))
+                self.health -=player.player_dmg
+                self.attack_count +=1
+            else:
+                win.blit(r_attack[self.attack_count//9], (player.x, player.y))
+                self.attack_count +=1
+        if player.l_attack == True:
+            if player.x > self.x - 40 and player.x < self.x + 70 and player.y > self.y - 40 and player.y < self.y + 70:
+                win.blit(l_attack[self.attack_count//9], (player.x, player.y))
+                self.health -=player.player_dmg
+                self.attack_count +=1
+            else:
+                win.blit(l_attack[self.attack_count//9], (player.x, player.y))
+                self.attack_count +=1
