@@ -13,8 +13,8 @@ win = pygame.display.set_mode((screen_x, screen_y))
 pygame.display.set_caption("Menu Window")
 
 #Setting the Font used for the menu options
-font = pygame.font.Font("Retro.ttf", 150)
-font_small = pygame.font.Font("Retro.ttf", 50)
+font = pygame.font.Font("retro.ttf", 150)
+font_small = pygame.font.Font("retro.ttf", 50)
 
 #RGB  colour Values
 white = (255,255,255)

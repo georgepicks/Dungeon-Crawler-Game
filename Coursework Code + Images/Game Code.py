@@ -9,11 +9,13 @@ pygame.init() #initialises the pygame window
 screen_x = 1000#screen width
 screen_y = 750#screen height 
 
+screen_y = 750#screen height 
+
 #different sized fonts for different aspects of the game
-font_small = pygame.font.Font("Retro.ttf", 100)
-font_big = pygame.font.Font("Retro.ttf", 150)
-font_ehealth = pygame.font.Font("Retro.ttf", 25)
-font_help = pygame.font.Font("Retro.ttf", 60)
+font_small = pygame.font.Font("retro.ttf", 100)
+font_big = pygame.font.Font("retro.ttf", 150)
+font_ehealth = pygame.font.Font("retro.ttf", 25)
+font_help = pygame.font.Font("retro.ttf", 60)
 
 #starts the timer that records how fast the player completed the game
 start_time = time.time()
